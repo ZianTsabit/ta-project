@@ -1,0 +1,7 @@
+initial_fields = {
+    "order_id": "INT",
+    "product_id": "VARCHAR(255)",
+    "quantity": "INT",
+    "price_one": "DOUBLE PRECISION",
+    "order_line": "INT"
+}

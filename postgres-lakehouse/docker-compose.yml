@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres-lakehouse
+    restart: always
+    ports:
+      - "5434:5432"
+    environment:
+      POSTGRES_DB: mydb            # Change database name as needed
+      POSTGRES_USER: user          # Change username as needed
+      POSTGRES_PASSWORD: password  # Change password as needed
+    volumes:
+      - postgres-data:/var/lib/postgresql/data  # Persist data outside the container
+
+volumes:
+  postgres-data:
+    driver: local

@@ -1,0 +1,18 @@
+[2024-05-26T11:22:21.872+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dynamic_schema_matching_dag.run_schema_matching manual__2024-05-26T11:22:20.293138+00:00 [queued]>
+[2024-05-26T11:22:21.880+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dynamic_schema_matching_dag.run_schema_matching manual__2024-05-26T11:22:20.293138+00:00 [queued]>
+[2024-05-26T11:22:21.880+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-05-26T11:22:21.892+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): run_schema_matching> on 2024-05-26 11:22:20.293138+00:00
+[2024-05-26T11:22:21.897+0000] {standard_task_runner.py:57} INFO - Started process 72 to run task
+[2024-05-26T11:22:21.899+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dynamic_schema_matching_dag', 'run_schema_matching', 'manual__2024-05-26T11:22:20.293138+00:00', '--job-id', '57', '--raw', '--subdir', 'DAGS_FOLDER/asms_dag.py', '--cfg-path', '/tmp/tmpo6pqfm62']
+[2024-05-26T11:22:21.900+0000] {standard_task_runner.py:85} INFO - Job 57: Subtask run_schema_matching
+[2024-05-26T11:22:21.930+0000] {task_command.py:410} INFO - Running <TaskInstance: dynamic_schema_matching_dag.run_schema_matching manual__2024-05-26T11:22:20.293138+00:00 [running]> on host c65bc68c015d
+[2024-05-26T11:22:22.118+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dynamic_schema_matching_dag' AIRFLOW_CTX_TASK_ID='run_schema_matching' AIRFLOW_CTX_EXECUTION_DATE='2024-05-26T11:22:20.293138+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-26T11:22:20.293138+00:00'
+[2024-05-26T11:22:22.195+0000] {logging_mixin.py:149} INFO - Fact Table Matching Results:
+[2024-05-26T11:22:22.195+0000] {logging_mixin.py:149} INFO - orderdetails
+[2024-05-26T11:22:22.195+0000] {logging_mixin.py:149} INFO - 
+Dimension Matching Results:
+[2024-05-26T11:22:22.195+0000] {logging_mixin.py:149} INFO - {'dim_client': 'clients, orders, payments', 'dim_employee': 'employees', 'dim_office': 'offices', 'dim_product': 'products, , productlines'}
+[2024-05-26T11:22:22.195+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-05-26T11:22:22.203+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=dynamic_schema_matching_dag, task_id=run_schema_matching, execution_date=20240526T112220, start_date=20240526T112221, end_date=20240526T112222
+[2024-05-26T11:22:22.231+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-05-26T11:22:22.247+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

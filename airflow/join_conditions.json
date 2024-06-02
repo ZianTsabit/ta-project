@@ -1,0 +1,47 @@
+[
+    {
+        "dimension_table": "dim_client",
+        "source_table": "clients",
+        "join_condition": "clients.sales_rep_employee_id = employees.employee_id"
+    },
+    {
+        "dimension_table": "dim_client",
+        "source_table": "clients",
+        "join_condition": "clients.client_id = orders.client_id"
+    },
+    {
+        "dimension_table": "dim_client",
+        "source_table": "payments",
+        "join_condition": "payments.client_id = clients.client_id"
+    },
+    {
+        "dimension_table": "dim_client",
+        "source_table": "orders",
+        "join_condition": "orders.client_id = clients.client_id"
+    },
+    {
+        "dimension_table": "dim_employee",
+        "source_table": "employees",
+        "join_condition": "N/A"
+    },
+    {
+        "dimension_table": "dim_office",
+        "source_table": "offices",
+        "join_condition": "N/A"
+    },
+    {
+        "dimension_table": "dim_product",
+        "source_table": "products",
+        "join_condition": "products.product_line = productlines.product_line"
+    },
+    {
+        "dimension_table": "dim_product",
+        "source_table": "products",
+        "join_condition": "products.product_id = orderdetails.product_id"
+    },
+    {
+        "dimension_table": "dim_product",
+        "source_table": "productlines",
+        "join_condition": "productlines.product_line = products.product_line"
+    }
+]

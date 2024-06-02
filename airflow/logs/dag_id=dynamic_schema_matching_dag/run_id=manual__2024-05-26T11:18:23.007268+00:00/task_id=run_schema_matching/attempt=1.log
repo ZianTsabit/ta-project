@@ -1,0 +1,17 @@
+[2024-05-26T11:18:24.510+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dynamic_schema_matching_dag.run_schema_matching manual__2024-05-26T11:18:23.007268+00:00 [queued]>
+[2024-05-26T11:18:24.522+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dynamic_schema_matching_dag.run_schema_matching manual__2024-05-26T11:18:23.007268+00:00 [queued]>
+[2024-05-26T11:18:24.523+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-05-26T11:18:24.547+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): run_schema_matching> on 2024-05-26 11:18:23.007268+00:00
+[2024-05-26T11:18:24.556+0000] {standard_task_runner.py:57} INFO - Started process 66 to run task
+[2024-05-26T11:18:24.559+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dynamic_schema_matching_dag', 'run_schema_matching', 'manual__2024-05-26T11:18:23.007268+00:00', '--job-id', '55', '--raw', '--subdir', 'DAGS_FOLDER/asms_dag.py', '--cfg-path', '/tmp/tmpdeylby5b']
+[2024-05-26T11:18:24.561+0000] {standard_task_runner.py:85} INFO - Job 55: Subtask run_schema_matching
+[2024-05-26T11:18:24.603+0000] {task_command.py:410} INFO - Running <TaskInstance: dynamic_schema_matching_dag.run_schema_matching manual__2024-05-26T11:18:23.007268+00:00 [running]> on host c65bc68c015d
+[2024-05-26T11:18:24.778+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dynamic_schema_matching_dag' AIRFLOW_CTX_TASK_ID='run_schema_matching' AIRFLOW_CTX_EXECUTION_DATE='2024-05-26T11:18:23.007268+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-26T11:18:23.007268+00:00'
+[2024-05-26T11:18:24.780+0000] {logging_mixin.py:149} INFO - (psycopg2.OperationalError) connection to server at "c3fe3e232a6f" (172.26.0.9), port 5434 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-05-26T11:18:24.780+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-05-26T11:18:24.787+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=dynamic_schema_matching_dag, task_id=run_schema_matching, execution_date=20240526T111823, start_date=20240526T111824, end_date=20240526T111824
+[2024-05-26T11:18:24.814+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-05-26T11:18:24.856+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

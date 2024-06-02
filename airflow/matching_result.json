@@ -1,0 +1,11 @@
+{
+    "fact_matching": {
+        "fact_table": "orderdetails", 
+        "match_table": ["quantity", "price_one"]}, 
+    "dimension_table": {
+        "dim_client": ["clients", "payments", "orders"], 
+        "dim_employee": ["employees"], 
+        "dim_office": ["offices"], 
+        "dim_product": ["products", "productlines"]
+    }
+}

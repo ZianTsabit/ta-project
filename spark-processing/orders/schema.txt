@@ -1,0 +1,9 @@
+initial_fields = {
+    "order_id": "INT",
+    "order_date": "TIMESTAMP",
+    "required_date": "TIMESTAMP",
+    "shipped_date": "TIMESTAMP",
+    "status": "VARCHAR(255)",
+    "comments": "TEXT",
+    "client_id": "INT"
+}

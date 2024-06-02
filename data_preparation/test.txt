@@ -1,0 +1,1 @@
+db.offices.insert([{"office_id": 999,"city": "East Jakarta","phone": "087886250948","address_line_1": "Cisitu Lama","address_line_2": "Cisitu Lama No.2","state": "Bandung","country": "Indonesia","zip_code": "13540","territory": "Bandung City"}]);

@@ -1,0 +1,11 @@
+initial_fields = {
+    "office_id": "INT",
+    "city": "VARCHAR(255)",
+    "phone": "VARCHAR(255)",
+    "address_line_1": "VARCHAR(255)",
+    "address_line_2": "VARCHAR(255)",
+    "state": "VARCHAR(255)",
+    "country": "VARCHAR(255)",
+    "zip_code": "VARCHAR(255)",
+    "territory": "VARCHAR(255)"
+}

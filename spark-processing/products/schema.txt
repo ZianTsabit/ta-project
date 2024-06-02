@@ -1,0 +1,11 @@
+initial_fields = {
+    "product_id": "VARCHAR(255)",
+    "product_name": "VARCHAR(255)",
+    "product_line": "VARCHAR(255)",
+    "product_scale": "VARCHAR(255)",
+    "supplier": "VARCHAR(255)",
+    "description": "VARCHAR(255)",
+    "stock": "INT",
+    "price": "DOUBLE PRECISION",
+    "MSRP": "DOUBLE PRECISION"
+}

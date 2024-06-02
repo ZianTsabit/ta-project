@@ -1,0 +1,19 @@
+[2024-05-26T11:07:49.619+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dynamic_schema_matching_dag.run_schema_matching scheduled__2024-05-25T00:00:00+00:00 [queued]>
+[2024-05-26T11:07:49.630+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dynamic_schema_matching_dag.run_schema_matching scheduled__2024-05-25T00:00:00+00:00 [queued]>
+[2024-05-26T11:07:49.630+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-05-26T11:07:49.646+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): run_schema_matching> on 2024-05-25 00:00:00+00:00
+[2024-05-26T11:07:49.653+0000] {standard_task_runner.py:57} INFO - Started process 60 to run task
+[2024-05-26T11:07:49.655+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dynamic_schema_matching_dag', 'run_schema_matching', 'scheduled__2024-05-25T00:00:00+00:00', '--job-id', '53', '--raw', '--subdir', 'DAGS_FOLDER/asms_dag.py', '--cfg-path', '/tmp/tmp0umtlc_k']
+[2024-05-26T11:07:49.656+0000] {standard_task_runner.py:85} INFO - Job 53: Subtask run_schema_matching
+[2024-05-26T11:07:49.691+0000] {task_command.py:410} INFO - Running <TaskInstance: dynamic_schema_matching_dag.run_schema_matching scheduled__2024-05-25T00:00:00+00:00 [running]> on host c65bc68c015d
+[2024-05-26T11:07:49.868+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dynamic_schema_matching_dag' AIRFLOW_CTX_TASK_ID='run_schema_matching' AIRFLOW_CTX_EXECUTION_DATE='2024-05-25T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-25T00:00:00+00:00'
+[2024-05-26T11:07:49.869+0000] {logging_mixin.py:149} INFO - (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5434 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5434 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-05-26T11:07:49.869+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-05-26T11:07:49.877+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=dynamic_schema_matching_dag, task_id=run_schema_matching, execution_date=20240525T000000, start_date=20240526T110749, end_date=20240526T110749
+[2024-05-26T11:07:49.907+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-05-26T11:07:49.923+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

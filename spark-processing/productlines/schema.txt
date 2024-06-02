@@ -1,0 +1,4 @@
+initial_fields = {
+    "product_line": "VARCHAR(255)",
+    "text_description": "VARCHAR(255)"
+}

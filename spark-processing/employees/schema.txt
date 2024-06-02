@@ -1,0 +1,26 @@
+initial_fields = {
+    "employee_id": "INT",
+    "last_name": "VARCHAR(255)",
+    "first_name": "VARCHAR(255)",
+    "extension": "INT",
+    "email": "VARCHAR(255)",
+    "office_id": "INT",
+    "reports_to": "VARCHAR(255)",
+    "job_name": "VARCHAR(255)"
+}
+
+if operation == "c":
+    for key, nested_table in nested_tables.items():
+        nested_data = after_data[key]
+        nested_columns = ', '.join(f'"{sanitize_column_name(k)}"' for k in nested_data.keys())
+        nested_values = ', '.join(f"'{value}'" if isinstance(value, str) else str(value) for value in nested_data.values())
+        nested_sql = f'INSERT INTO "{nested_table}" ({nested_columns}) VALUES ({nested_values});'
+        cursor.execute(nested_sql)
+
+        if key in after_data:
+            foreign_key = list(nested_data.values())[0]
+            after_data[key] = json.dumps(foreign_key)
+
+    columns = ', '.join(f'"{sanitize_column_name(k)}"' for k in after_data.keys() if k != "_id")
+    values = ', '.join(f"'{value}'" if isinstance(value, str) else str(value) for k, value in after_data.items() if k != "_id")
+    sql = f'INSERT INTO "{table_name}" ({columns}) VALUES ({values});'

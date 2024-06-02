@@ -1,0 +1,45 @@
+[2024-05-21T17:06:20.396+0000] {processor.py:157} INFO - Started process (PID=30) to work on /opt/airflow/dags/manual_etl.py
+[2024-05-21T17:06:20.397+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/manual_etl.py for tasks to queue
+[2024-05-21T17:06:20.397+0000] {logging_mixin.py:149} INFO - [2024-05-21T17:06:20.397+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/manual_etl.py
+[2024-05-21T17:06:20.419+0000] {processor.py:836} INFO - DAG(s) dict_keys(['simple_greet_dag']) retrieved from /opt/airflow/dags/manual_etl.py
+[2024-05-21T17:06:20.507+0000] {logging_mixin.py:149} INFO - [2024-05-21T17:06:20.507+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-05-21T17:06:20.562+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/manual_etl.py took 0.169 seconds
+[2024-05-21T17:06:50.650+0000] {processor.py:157} INFO - Started process (PID=31) to work on /opt/airflow/dags/manual_etl.py
+[2024-05-21T17:06:50.651+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/manual_etl.py for tasks to queue
+[2024-05-21T17:06:50.653+0000] {logging_mixin.py:149} INFO - [2024-05-21T17:06:50.652+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/manual_etl.py
+[2024-05-21T17:06:50.673+0000] {processor.py:836} INFO - DAG(s) dict_keys(['simple_greet_dag']) retrieved from /opt/airflow/dags/manual_etl.py
+[2024-05-21T17:06:50.702+0000] {logging_mixin.py:149} INFO - [2024-05-21T17:06:50.702+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-05-21T17:06:50.748+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/manual_etl.py took 0.105 seconds
+[2024-05-21T17:07:20.937+0000] {processor.py:157} INFO - Started process (PID=41) to work on /opt/airflow/dags/manual_etl.py
+[2024-05-21T17:07:20.937+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/manual_etl.py for tasks to queue
+[2024-05-21T17:07:20.938+0000] {logging_mixin.py:149} INFO - [2024-05-21T17:07:20.938+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/manual_etl.py
+[2024-05-21T17:07:20.946+0000] {processor.py:836} INFO - DAG(s) dict_keys(['simple_greet_dag']) retrieved from /opt/airflow/dags/manual_etl.py
+[2024-05-21T17:07:20.974+0000] {logging_mixin.py:149} INFO - [2024-05-21T17:07:20.974+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-05-21T17:07:21.015+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/manual_etl.py took 0.081 seconds
+[2024-05-21T17:07:51.158+0000] {processor.py:157} INFO - Started process (PID=42) to work on /opt/airflow/dags/manual_etl.py
+[2024-05-21T17:07:51.158+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/manual_etl.py for tasks to queue
+[2024-05-21T17:07:51.159+0000] {logging_mixin.py:149} INFO - [2024-05-21T17:07:51.159+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/manual_etl.py
+[2024-05-21T17:07:51.168+0000] {processor.py:836} INFO - DAG(s) dict_keys(['simple_greet_dag']) retrieved from /opt/airflow/dags/manual_etl.py
+[2024-05-21T17:07:51.188+0000] {logging_mixin.py:149} INFO - [2024-05-21T17:07:51.187+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-05-21T17:07:51.220+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/manual_etl.py took 0.065 seconds
+[2024-05-21T17:08:07.295+0000] {processor.py:157} INFO - Started process (PID=43) to work on /opt/airflow/dags/manual_etl.py
+[2024-05-21T17:08:07.296+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/manual_etl.py for tasks to queue
+[2024-05-21T17:08:07.297+0000] {logging_mixin.py:149} INFO - [2024-05-21T17:08:07.297+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/manual_etl.py
+[2024-05-21T17:08:07.312+0000] {processor.py:836} INFO - DAG(s) dict_keys(['simple_greet_dag']) retrieved from /opt/airflow/dags/manual_etl.py
+[2024-05-21T17:08:07.371+0000] {logging_mixin.py:149} INFO - [2024-05-21T17:08:07.371+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-05-21T17:08:07.383+0000] {logging_mixin.py:149} INFO - [2024-05-21T17:08:07.383+0000] {dag.py:2747} INFO - Creating ORM DAG for simple_greet_dag
+[2024-05-21T17:08:07.394+0000] {logging_mixin.py:149} INFO - [2024-05-21T17:08:07.394+0000] {dag.py:3490} INFO - Setting next_dagrun for simple_greet_dag to 2021-01-01T00:00:00+00:00, run_after=2021-01-02T00:00:00+00:00
+[2024-05-21T17:08:07.416+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/manual_etl.py took 0.127 seconds
+[2024-05-21T17:08:37.537+0000] {processor.py:157} INFO - Started process (PID=44) to work on /opt/airflow/dags/manual_etl.py
+[2024-05-21T17:08:37.538+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/manual_etl.py for tasks to queue
+[2024-05-21T17:08:37.538+0000] {logging_mixin.py:149} INFO - [2024-05-21T17:08:37.538+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/manual_etl.py
+[2024-05-21T17:08:37.551+0000] {processor.py:836} INFO - DAG(s) dict_keys(['simple_greet_dag']) retrieved from /opt/airflow/dags/manual_etl.py
+[2024-05-21T17:08:37.586+0000] {logging_mixin.py:149} INFO - [2024-05-21T17:08:37.586+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-05-21T17:08:37.624+0000] {logging_mixin.py:149} INFO - [2024-05-21T17:08:37.623+0000] {dag.py:3490} INFO - Setting next_dagrun for simple_greet_dag to 2021-01-01T00:00:00+00:00, run_after=2021-01-02T00:00:00+00:00
+[2024-05-21T17:08:37.653+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/manual_etl.py took 0.120 seconds
+[2024-05-21T17:09:07.778+0000] {processor.py:157} INFO - Started process (PID=45) to work on /opt/airflow/dags/manual_etl.py
+[2024-05-21T17:09:07.779+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/manual_etl.py for tasks to queue
+[2024-05-21T17:09:07.779+0000] {logging_mixin.py:149} INFO - [2024-05-21T17:09:07.779+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/manual_etl.py
+[2024-05-21T17:09:07.788+0000] {processor.py:836} INFO - DAG(s) dict_keys(['simple_greet_dag']) retrieved from /opt/airflow/dags/manual_etl.py
+[2024-05-21T17:09:07.811+0000] {logging_mixin.py:149} INFO - [2024-05-21T17:09:07.811+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-05-21T17:09:07.845+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/manual_etl.py took 0.069 seconds

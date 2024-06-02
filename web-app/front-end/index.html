@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETL Tools for NoSQL</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+        }
+        .sidebar {
+            min-width: 200px;
+            max-width: 250px;
+            background-color: #f8f9fa;
+            padding: 1rem;
+        }
+        .main-content {
+            flex-grow: 1;
+            padding: 1rem;
+        }
+        .content-section {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>ETL Tools for NoSQL</h2>
+        <nav class="nav flex-column">
+            <a class="nav-link" href="#" data-target="overview">Overview</a>
+            <a class="nav-link" href="#" data-target="mongodb">MongoDB</a>
+            <a class="nav-link" href="#" data-target="debezium">Debezium</a>
+            <a class="nav-link" href="#" data-target="kafka">Kafka</a>
+            <a class="nav-link" href="#" data-target="lakehouse">Lakehouse</a>
+            <a class="nav-link" href="#" data-target="airflow-dag">Airflow DAG</a>
+            <a class="nav-link" href="#" data-target="warehouse">Warehouse</a>
+            <a class="nav-link" href="#" data-target="run-job">Run Job</a>
+        </nav>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <div id="overview" class="content-section">
+            <h2>Overview</h2>
+            <p>This is the page for the description about the tools.</p>
+        </div>
+        
+        <div id="mongodb" class="content-section">
+            <h2>MongoDB Configuration</h2>  
+            <form id="mongodb-form">
+                <div class="form-group">
+                    <label for="mongodb-uri">MongoDB URI</label>
+                    <input type="text" class="form-control" id="mongodb-uri" placeholder="Enter the MongoDB URI" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+        </div>
+        
+        <div id="debezium" class="content-section">
+            <h2>Debezium Configuration</h2>
+            <form id="debezium-form">
+                
+                <div class="form-group">
+                    <label for="debezium-url">Debezium URL</label>
+                    <input type="text" class="form-control" id="debezium-url" placeholder="Enter the debezium url" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="connector-name">Connector Name</label>
+                    <input type="text" class="form-control" id="connector-name" placeholder="Enter Connector Name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="connector-class">Connector Class</label>
+                    <input type="text" class="form-control" id="connector-class" placeholder="Enter Connector Class" value="io.debezium.connector.mongodb.MongoDbConnector" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="tasks-max">Tasks Max</label>
+                    <input type="number" class="form-control" id="tasks-max" placeholder="Enter Tasks Max" value="1" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mongodb-connection-string">MongoDB Connection String</label>
+                    <input type="text" class="form-control" id="mongodb-connection-string" placeholder="Enter MongoDB Connection String" value="mongodb://mongodb:27017/?replicaSet=rs0" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="topic-prefix">Topic Prefix</label>
+                    <input type="text" class="form-control" id="topic-prefix" placeholder="Enter Topic Prefix" value="dbserver1" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mongodb-user">MongoDB User</label>
+                    <input type="text" class="form-control" id="mongodb-user" placeholder="Enter MongoDB User" value="debezium" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mongodb-password">MongoDB Password</label>
+                    <input type="password" class="form-control" id="mongodb-password" placeholder="Enter MongoDB Password" value="dbz" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="database-include-list">Database Include List</label>
+                    <input type="text" class="form-control" id="database-include-list" placeholder="Enter Database Include List" value="db_shop" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+        </div>
+
+        <div id="kafka" class="content-section">
+            <h2>Kafka Configuration</h2>
+            <form id="kafka-form">
+                
+                <div class="form-group">
+                    <label for="kafka-bootstrap-servers">Kafka Bootstrap Servers</label>
+                    <input type="text" class="form-control" id="kafka-bootstrap-servers" placeholder="Enter the kafka bootstrap servers" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="kafka-topics">Kafka Topics</label>
+                    <input type="text" class="form-control" id="kafka-topics" placeholder="Enter the kafka topics" required>
+                </div>
+                    
+                <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+        </div>
+        
+        <div id="lakehouse" class="content-section">
+            <h2>Lakehouse Configuration</h2>
+            <form id="lakehouse-form">
+
+                <div class="form-group">
+                    <label for="lakehouse-host">Lakehouse Host</label>
+                    <input type="text" class="form-control" id="lakehouse-host" placeholder="Enter the lakehouse host" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="lakehouse-port">Lakehouse Port</label>
+                    <input type="number" class="form-control" id="lakehouse-port" placeholder="Enter the lakehouse port" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="lakehouse-db">Lakehouse DB</label>
+                    <input type="text" class="form-control" id="lakehouse-db" placeholder="Enter the lakehouse db" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="lakehouse-user">Lakehouse User</label>
+                    <input type="text" class="form-control" id="lakehouse-user" placeholder="Enter the lakehouse user" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="lakehouse-password">Lakehouse Password</label>
+                    <input type="password" class="form-control" id="lakehouse-password" placeholder="Enter the lakehouse password" required>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+        </div>
+        
+        <div id="airflow-dag" class="content-section">
+            <h2>Airflow DAG Config</h2>
+            <p>This is the settings page for Airflow DAG.</p>
+        </div>
+        
+        <div id="warehouse" class="content-section">
+            <h2>Warehouse Configuration</h2>
+            <form id="warehouse-form">
+
+                <div class="form-group">
+                    <label for="warehouse-host">Warehouse Host</label>
+                    <input type="text" class="form-control" id="warehouse-host" placeholder="Enter the warehouse host" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="warehouse-port">Warehouse Port</label>
+                    <input type="number" class="form-control" id="warehouse-port" placeholder="Enter the warehouse port" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="warehouse-db">Warehouse DB</label>
+                    <input type="text" class="form-control" id="warehouse-db" placeholder="Enter the warehouse db" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="warehouse-user">Warehouse User</label>
+                    <input type="text" class="form-control" id="warehouse-user" placeholder="Enter the warehouse user" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="warehouse-password">Warehouse Password</label>
+                    <input type="password" class="form-control" id="warehouse-password" placeholder="Enter the warehouse password" required>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+        </div>
+        
+        <div id="run-job" class="content-section">
+            <h2>Run Job</h2>
+            <p>This is the page for running the job.</p>
+            <button id="run-job-button" class="btn btn-primary">Run Job</button>
+        </div>
+    
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const contentSections = document.querySelectorAll('.content-section');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute('data-target');
+
+                    contentSections.forEach(section => {
+                        section.style.display = 'none';
+                    });
+
+                    document.getElementById(targetId).style.display = 'block';
+
+                    if (targetId === 'mongodb') {
+                        attachFormListener('mongodb-form', 'mongodb-uri');
+                    } else if (targetId === 'debezium') {
+                        attachFormListener('debezium-form');
+                    } else if (targetId === 'lakehouse') {
+                        attachFormListener('lakehouse-form');
+                    } else if (targetId === 'warehouse') {
+                        attachFormListener('warehouse-form');
+                    } else if (targetId === 'kafka') {
+                        attachFormListener('kafka-form');
+                    }
+                });
+            });
+
+            document.getElementById('run-job-button').addEventListener('click', function() {
+                const formData = getFormData();
+                fetch('/run-job', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    alert(data.message);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Failed to run job.');
+                });
+            });
+
+            function getFormData() {
+                const formData = {};
+                formData.mongodbUri = document.getElementById('mongodb-uri').value;
+                formData.kafkaBootstrapServers = document.getElementById('kafka-bootstrap-servers').value;
+                formData.kafkaTopics = document.getElementById('kafka-topics').value;
+                formData.lakehouseHost = document.getElementById('lakehouse-host').value;
+                formData.lakehousePort = document.getElementById('lakehouse-port').value;
+                formData.lakehouseDb = document.getElementById('lakehouse-db').value;
+                formData.lakehouseUser = document.getElementById('lakehouse-user').value;
+                formData.lakehousePassword = document.getElementById('lakehouse-password').value;
+                return formData;
+            }
+
+            function attachFormListener(formId, uriId = null) {
+                const form = document.getElementById(formId);
+                if (form) {
+                    form.addEventListener('submit', function(event) {
+                        event.preventDefault();
+                        if (formId === 'debezium-form') {
+                            handleDebeziumForm();
+                        } else if (uriId) {
+                            const uri = document.getElementById(uriId).value;
+                            console.log(uri);
+                            alert(formId.replace('-form', '') + ' URI: ' + uri);
+                        } else {
+                            console.log('Form submitted:', formId);
+                            alert('Form submitted: ' + formId);
+                        }
+                    });
+                }
+            }
+
+            function handleDebeziumForm() {
+                const url = document.getElementById('debezium-url').value;
+                const connectorName = document.getElementById('connector-name').value;
+                const connectorClass = document.getElementById('connector-class').value;
+                const tasksMax = document.getElementById('tasks-max').value;
+                const mongodbConnectionString = document.getElementById('mongodb-connection-string').value;
+                const topicPrefix = document.getElementById('topic-prefix').value;
+                const mongodbUser = document.getElementById('mongodb-user').value;
+                const mongodbPassword = document.getElementById('mongodb-password').value;
+                const databaseIncludeList = document.getElementById('database-include-list').value;
+
+                const data = {
+                    name: connectorName,
+                    config: {
+                        "connector.class": connectorClass,
+                        "tasks.max": tasksMax,
+                        "mongodb.connection.string": mongodbConnectionString,
+                        "topic.prefix": topicPrefix,
+                        "mongodb.user": mongodbUser,
+                        "mongodb.password": mongodbPassword,
+                        "database.include.list": databaseIncludeList
+                    }
+                };
+
+                fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Success:', data);
+                    alert('Debezium connector registered successfully!');
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                    alert('Failed to register Debezium connector.');
+                });
+            }
+
+            // Show the overview section by default
+            document.getElementById('overview').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

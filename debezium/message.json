@@ -1,0 +1,2748 @@
+Key: b'{
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "string",
+                "optional": false,
+                "field": "id"
+            }
+        ],
+        "optional": false,
+        "name": "dbserver1.db_shop.offices.Key"
+    },
+    "payload": {
+        "id": "{\\"$oid\\": \\"663cd26f96922ac9a17c49d4\\"}"
+    }
+}', Value: {
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "string",
+                "optional": true,
+                "name": "io.debezium.data.Json",
+                "version": 1,
+                "field": "before"
+            },
+            {
+                "type": "string",
+                "optional": true,
+                "name": "io.debezium.data.Json",
+                "version": 1,
+                "field": "after"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "optional": false
+                        },
+                        "optional": true,
+                        "field": "removedFields"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "name": "io.debezium.data.Json",
+                        "version": 1,
+                        "field": "updatedFields"
+                    },
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "struct",
+                            "fields": [
+                                {
+                                    "type": "string",
+                                    "optional": false,
+                                    "field": "field"
+                                },
+                                {
+                                    "type": "int32",
+                                    "optional": false,
+                                    "field": "size"
+                                }
+                            ],
+                            "optional": false,
+                            "name": "io.debezium.connector.mongodb.changestream.truncatedarray",
+                            "version": 1
+                        },
+                        "optional": true,
+                        "field": "truncatedArrays"
+                    }
+                ],
+                "optional": true,
+                "name": "io.debezium.connector.mongodb.changestream.updatedescription",
+                "version": 1,
+                "field": "updateDescription"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "version"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "connector"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "name"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_ms"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "name": "io.debezium.data.Enum",
+                        "version": 1,
+                        "parameters": {
+                            "allowed": "true,last,false,incremental"
+                        },
+                        "default": "false",
+                        "field": "snapshot"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "db"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "sequence"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_us"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_ns"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "collection"
+                    },
+                    {
+                        "type": "int32",
+                        "optional": false,
+                        "field": "ord"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "lsid"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "txnNumber"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "wallTime"
+                    }
+                ],
+                "optional": false,
+                "name": "io.debezium.connector.mongo.Source",
+                "field": "source"
+            },
+            {
+                "type": "string",
+                "optional": true,
+                "field": "op"
+            },
+            {
+                "type": "int64",
+                "optional": true,
+                "field": "ts_ms"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "id"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "total_order"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "data_collection_order"
+                    }
+                ],
+                "optional": true,
+                "name": "event.block",
+                "version": 1,
+                "field": "transaction"
+            }
+        ],
+        "optional": false,
+        "name": "dbserver1.db_shop.offices.Envelope"
+    },
+    "payload": {
+        "before": null,
+        "after": "{\"_id\": {\"$oid\": \"663cd26f96922ac9a17c49d4\"},\"office_id\": 611,\"city\": \"Velezhaven\",\"phone\": \"351.834.8526x4922\",\"address_line_1\": \"00845 Larson Villages Suite 559\",\"address_line_2\": \"Apt. 369\",\"state\": \"DE\",\"country\": \"Nauru\",\"zip_code\": \"19105\",\"territory\": \"race\"}",
+        "updateDescription": null,
+        "source": {
+            "version": "2.7.0.Alpha1",
+            "connector": "mongodb",
+            "name": "dbserver1",
+            "ts_ms": 0,
+            "snapshot": "true",
+            "db": "db_shop",
+            "sequence": null,
+            "ts_us": 0,
+            "ts_ns": 0,
+            "collection": "offices",
+            "ord": -1,
+            "lsid": null,
+            "txnNumber": null,
+            "wallTime": null
+        },
+        "op": "r",
+        "ts_ms": 1715262339244,
+        "transaction": null
+    }
+}
+Key: b'{
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "string",
+                "optional": false,
+                "field": "id"
+            }
+        ],
+        "optional": false,
+        "name": "dbserver1.db_shop.offices.Key"
+    },
+    "payload": {
+        "id": "{\\"$oid\\": \\"663cd26f96922ac9a17c49d5\\"}"
+    }
+}', Value: {
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "string",
+                "optional": true,
+                "name": "io.debezium.data.Json",
+                "version": 1,
+                "field": "before"
+            },
+            {
+                "type": "string",
+                "optional": true,
+                "name": "io.debezium.data.Json",
+                "version": 1,
+                "field": "after"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "optional": false
+                        },
+                        "optional": true,
+                        "field": "removedFields"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "name": "io.debezium.data.Json",
+                        "version": 1,
+                        "field": "updatedFields"
+                    },
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "struct",
+                            "fields": [
+                                {
+                                    "type": "string",
+                                    "optional": false,
+                                    "field": "field"
+                                },
+                                {
+                                    "type": "int32",
+                                    "optional": false,
+                                    "field": "size"
+                                }
+                            ],
+                            "optional": false,
+                            "name": "io.debezium.connector.mongodb.changestream.truncatedarray",
+                            "version": 1
+                        },
+                        "optional": true,
+                        "field": "truncatedArrays"
+                    }
+                ],
+                "optional": true,
+                "name": "io.debezium.connector.mongodb.changestream.updatedescription",
+                "version": 1,
+                "field": "updateDescription"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "version"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "connector"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "name"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_ms"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "name": "io.debezium.data.Enum",
+                        "version": 1,
+                        "parameters": {
+                            "allowed": "true,last,false,incremental"
+                        },
+                        "default": "false",
+                        "field": "snapshot"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "db"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "sequence"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_us"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_ns"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "collection"
+                    },
+                    {
+                        "type": "int32",
+                        "optional": false,
+                        "field": "ord"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "lsid"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "txnNumber"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "wallTime"
+                    }
+                ],
+                "optional": false,
+                "name": "io.debezium.connector.mongo.Source",
+                "field": "source"
+            },
+            {
+                "type": "string",
+                "optional": true,
+                "field": "op"
+            },
+            {
+                "type": "int64",
+                "optional": true,
+                "field": "ts_ms"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "id"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "total_order"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "data_collection_order"
+                    }
+                ],
+                "optional": true,
+                "name": "event.block",
+                "version": 1,
+                "field": "transaction"
+            }
+        ],
+        "optional": false,
+        "name": "dbserver1.db_shop.offices.Envelope"
+    },
+    "payload": {
+        "before": null,
+        "after": "{\"_id\": {\"$oid\": \"663cd26f96922ac9a17c49d5\"},\"office_id\": 576,\"city\": \"West Steven\",\"phone\": \"(728)574-5595x178\",\"address_line_1\": \"528 Jamie Circles Suite 680\",\"address_line_2\": \"Apt. 923\",\"state\": \"AR\",\"country\": \"United Arab Emirates\",\"zip_code\": \"67633\",\"territory\": \"born\"}",
+        "updateDescription": null,
+        "source": {
+            "version": "2.7.0.Alpha1",
+            "connector": "mongodb",
+            "name": "dbserver1",
+            "ts_ms": 0,
+            "snapshot": "true",
+            "db": "db_shop",
+            "sequence": null,
+            "ts_us": 0,
+            "ts_ns": 0,
+            "collection": "offices",
+            "ord": -1,
+            "lsid": null,
+            "txnNumber": null,
+            "wallTime": null
+        },
+        "op": "r",
+        "ts_ms": 1715262339244,
+        "transaction": null
+    }
+}
+Key: b'{
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "string",
+                "optional": false,
+                "field": "id"
+            }
+        ],
+        "optional": false,
+        "name": "dbserver1.db_shop.offices.Key"
+    },
+    "payload": {
+        "id": "{\\"$oid\\": \\"663cd26f96922ac9a17c49d6\\"}"
+    }
+}', Value: {
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "string",
+                "optional": true,
+                "name": "io.debezium.data.Json",
+                "version": 1,
+                "field": "before"
+            },
+            {
+                "type": "string",
+                "optional": true,
+                "name": "io.debezium.data.Json",
+                "version": 1,
+                "field": "after"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "optional": false
+                        },
+                        "optional": true,
+                        "field": "removedFields"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "name": "io.debezium.data.Json",
+                        "version": 1,
+                        "field": "updatedFields"
+                    },
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "struct",
+                            "fields": [
+                                {
+                                    "type": "string",
+                                    "optional": false,
+                                    "field": "field"
+                                },
+                                {
+                                    "type": "int32",
+                                    "optional": false,
+                                    "field": "size"
+                                }
+                            ],
+                            "optional": false,
+                            "name": "io.debezium.connector.mongodb.changestream.truncatedarray",
+                            "version": 1
+                        },
+                        "optional": true,
+                        "field": "truncatedArrays"
+                    }
+                ],
+                "optional": true,
+                "name": "io.debezium.connector.mongodb.changestream.updatedescription",
+                "version": 1,
+                "field": "updateDescription"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "version"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "connector"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "name"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_ms"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "name": "io.debezium.data.Enum",
+                        "version": 1,
+                        "parameters": {
+                            "allowed": "true,last,false,incremental"
+                        },
+                        "default": "false",
+                        "field": "snapshot"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "db"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "sequence"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_us"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_ns"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "collection"
+                    },
+                    {
+                        "type": "int32",
+                        "optional": false,
+                        "field": "ord"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "lsid"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "txnNumber"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "wallTime"
+                    }
+                ],
+                "optional": false,
+                "name": "io.debezium.connector.mongo.Source",
+                "field": "source"
+            },
+            {
+                "type": "string",
+                "optional": true,
+                "field": "op"
+            },
+            {
+                "type": "int64",
+                "optional": true,
+                "field": "ts_ms"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "id"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "total_order"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "data_collection_order"
+                    }
+                ],
+                "optional": true,
+                "name": "event.block",
+                "version": 1,
+                "field": "transaction"
+            }
+        ],
+        "optional": false,
+        "name": "dbserver1.db_shop.offices.Envelope"
+    },
+    "payload": {
+        "before": null,
+        "after": "{\"_id\": {\"$oid\": \"663cd26f96922ac9a17c49d6\"},\"office_id\": 333,\"city\": \"East Jacqueline\",\"phone\": \"001-422-506-9742x743\",\"address_line_1\": \"8630 Michael Ferry Suite 323\",\"address_line_2\": \"Suite 825\",\"state\": \"SD\",\"country\": \"Sao Tome and Principe\",\"zip_code\": \"15809\",\"territory\": \"inside\"}",
+        "updateDescription": null,
+        "source": {
+            "version": "2.7.0.Alpha1",
+            "connector": "mongodb",
+            "name": "dbserver1",
+            "ts_ms": 0,
+            "snapshot": "true",
+            "db": "db_shop",
+            "sequence": null,
+            "ts_us": 0,
+            "ts_ns": 0,
+            "collection": "offices",
+            "ord": -1,
+            "lsid": null,
+            "txnNumber": null,
+            "wallTime": null
+        },
+        "op": "r",
+        "ts_ms": 1715262339244,
+        "transaction": null
+    }
+}
+Key: b'{
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "string",
+                "optional": false,
+                "field": "id"
+            }
+        ],
+        "optional": false,
+        "name": "dbserver1.db_shop.offices.Key"
+    },
+    "payload": {
+        "id": "{\\"$oid\\": \\"663cd26f96922ac9a17c49d7\\"}"
+    }
+}', Value: {
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "string",
+                "optional": true,
+                "name": "io.debezium.data.Json",
+                "version": 1,
+                "field": "before"
+            },
+            {
+                "type": "string",
+                "optional": true,
+                "name": "io.debezium.data.Json",
+                "version": 1,
+                "field": "after"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "optional": false
+                        },
+                        "optional": true,
+                        "field": "removedFields"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "name": "io.debezium.data.Json",
+                        "version": 1,
+                        "field": "updatedFields"
+                    },
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "struct",
+                            "fields": [
+                                {
+                                    "type": "string",
+                                    "optional": false,
+                                    "field": "field"
+                                },
+                                {
+                                    "type": "int32",
+                                    "optional": false,
+                                    "field": "size"
+                                }
+                            ],
+                            "optional": false,
+                            "name": "io.debezium.connector.mongodb.changestream.truncatedarray",
+                            "version": 1
+                        },
+                        "optional": true,
+                        "field": "truncatedArrays"
+                    }
+                ],
+                "optional": true,
+                "name": "io.debezium.connector.mongodb.changestream.updatedescription",
+                "version": 1,
+                "field": "updateDescription"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "version"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "connector"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "name"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_ms"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "name": "io.debezium.data.Enum",
+                        "version": 1,
+                        "parameters": {
+                            "allowed": "true,last,false,incremental"
+                        },
+                        "default": "false",
+                        "field": "snapshot"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "db"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "sequence"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_us"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_ns"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "collection"
+                    },
+                    {
+                        "type": "int32",
+                        "optional": false,
+                        "field": "ord"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "lsid"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "txnNumber"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "wallTime"
+                    }
+                ],
+                "optional": false,
+                "name": "io.debezium.connector.mongo.Source",
+                "field": "source"
+            },
+            {
+                "type": "string",
+                "optional": true,
+                "field": "op"
+            },
+            {
+                "type": "int64",
+                "optional": true,
+                "field": "ts_ms"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "id"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "total_order"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "data_collection_order"
+                    }
+                ],
+                "optional": true,
+                "name": "event.block",
+                "version": 1,
+                "field": "transaction"
+            }
+        ],
+        "optional": false,
+        "name": "dbserver1.db_shop.offices.Envelope"
+    },
+    "payload": {
+        "before": null,
+        "after": "{\"_id\": {\"$oid\": \"663cd26f96922ac9a17c49d7\"},\"office_id\": 113,\"city\": \"New Johnnybury\",\"phone\": \"(543)681-1533x2599\",\"address_line_1\": \"0894 Williams Crossing\",\"address_line_2\": \"Apt. 844\",\"state\": \"MO\",\"country\": \"Falkland Islands (Malvinas)\",\"zip_code\": \"76396\",\"territory\": \"cold\"}",
+        "updateDescription": null,
+        "source": {
+            "version": "2.7.0.Alpha1",
+            "connector": "mongodb",
+            "name": "dbserver1",
+            "ts_ms": 0,
+            "snapshot": "true",
+            "db": "db_shop",
+            "sequence": null,
+            "ts_us": 0,
+            "ts_ns": 0,
+            "collection": "offices",
+            "ord": -1,
+            "lsid": null,
+            "txnNumber": null,
+            "wallTime": null
+        },
+        "op": "r",
+        "ts_ms": 1715262339244,
+        "transaction": null
+    }
+}
+Key: b'{
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "string",
+                "optional": false,
+                "field": "id"
+            }
+        ],
+        "optional": false,
+        "name": "dbserver1.db_shop.offices.Key"
+    },
+    "payload": {
+        "id": "{\\"$oid\\": \\"663cd26f96922ac9a17c49d8\\"}"
+    }
+}', Value: {
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "string",
+                "optional": true,
+                "name": "io.debezium.data.Json",
+                "version": 1,
+                "field": "before"
+            },
+            {
+                "type": "string",
+                "optional": true,
+                "name": "io.debezium.data.Json",
+                "version": 1,
+                "field": "after"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "optional": false
+                        },
+                        "optional": true,
+                        "field": "removedFields"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "name": "io.debezium.data.Json",
+                        "version": 1,
+                        "field": "updatedFields"
+                    },
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "struct",
+                            "fields": [
+                                {
+                                    "type": "string",
+                                    "optional": false,
+                                    "field": "field"
+                                },
+                                {
+                                    "type": "int32",
+                                    "optional": false,
+                                    "field": "size"
+                                }
+                            ],
+                            "optional": false,
+                            "name": "io.debezium.connector.mongodb.changestream.truncatedarray",
+                            "version": 1
+                        },
+                        "optional": true,
+                        "field": "truncatedArrays"
+                    }
+                ],
+                "optional": true,
+                "name": "io.debezium.connector.mongodb.changestream.updatedescription",
+                "version": 1,
+                "field": "updateDescription"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "version"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "connector"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "name"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_ms"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "name": "io.debezium.data.Enum",
+                        "version": 1,
+                        "parameters": {
+                            "allowed": "true,last,false,incremental"
+                        },
+                        "default": "false",
+                        "field": "snapshot"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "db"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "sequence"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_us"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_ns"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "collection"
+                    },
+                    {
+                        "type": "int32",
+                        "optional": false,
+                        "field": "ord"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "lsid"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "txnNumber"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "wallTime"
+                    }
+                ],
+                "optional": false,
+                "name": "io.debezium.connector.mongo.Source",
+                "field": "source"
+            },
+            {
+                "type": "string",
+                "optional": true,
+                "field": "op"
+            },
+            {
+                "type": "int64",
+                "optional": true,
+                "field": "ts_ms"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "id"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "total_order"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "data_collection_order"
+                    }
+                ],
+                "optional": true,
+                "name": "event.block",
+                "version": 1,
+                "field": "transaction"
+            }
+        ],
+        "optional": false,
+        "name": "dbserver1.db_shop.offices.Envelope"
+    },
+    "payload": {
+        "before": null,
+        "after": "{\"_id\": {\"$oid\": \"663cd26f96922ac9a17c49d8\"},\"office_id\": 144,\"city\": \"North Amandafurt\",\"phone\": \"+1-527-568-3829x4233\",\"address_line_1\": \"87397 White Curve\",\"address_line_2\": \"Suite 419\",\"state\": \"NC\",\"country\": \"Ireland\",\"zip_code\": \"58000\",\"territory\": \"too\"}",
+        "updateDescription": null,
+        "source": {
+            "version": "2.7.0.Alpha1",
+            "connector": "mongodb",
+            "name": "dbserver1",
+            "ts_ms": 0,
+            "snapshot": "true",
+            "db": "db_shop",
+            "sequence": null,
+            "ts_us": 0,
+            "ts_ns": 0,
+            "collection": "offices",
+            "ord": -1,
+            "lsid": null,
+            "txnNumber": null,
+            "wallTime": null
+        },
+        "op": "r",
+        "ts_ms": 1715262339244,
+        "transaction": null
+    }
+}
+Key: b'{
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "string",
+                "optional": false,
+                "field": "id"
+            }
+        ],
+        "optional": false,
+        "name": "dbserver1.db_shop.offices.Key"
+    },
+    "payload": {
+        "id": "{\\"$oid\\": \\"663cd26f96922ac9a17c49d9\\"}"
+    }
+}', Value: {
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "string",
+                "optional": true,
+                "name": "io.debezium.data.Json",
+                "version": 1,
+                "field": "before"
+            },
+            {
+                "type": "string",
+                "optional": true,
+                "name": "io.debezium.data.Json",
+                "version": 1,
+                "field": "after"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "optional": false
+                        },
+                        "optional": true,
+                        "field": "removedFields"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "name": "io.debezium.data.Json",
+                        "version": 1,
+                        "field": "updatedFields"
+                    },
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "struct",
+                            "fields": [
+                                {
+                                    "type": "string",
+                                    "optional": false,
+                                    "field": "field"
+                                },
+                                {
+                                    "type": "int32",
+                                    "optional": false,
+                                    "field": "size"
+                                }
+                            ],
+                            "optional": false,
+                            "name": "io.debezium.connector.mongodb.changestream.truncatedarray",
+                            "version": 1
+                        },
+                        "optional": true,
+                        "field": "truncatedArrays"
+                    }
+                ],
+                "optional": true,
+                "name": "io.debezium.connector.mongodb.changestream.updatedescription",
+                "version": 1,
+                "field": "updateDescription"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "version"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "connector"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "name"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_ms"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "name": "io.debezium.data.Enum",
+                        "version": 1,
+                        "parameters": {
+                            "allowed": "true,last,false,incremental"
+                        },
+                        "default": "false",
+                        "field": "snapshot"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "db"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "sequence"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_us"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_ns"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "collection"
+                    },
+                    {
+                        "type": "int32",
+                        "optional": false,
+                        "field": "ord"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "lsid"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "txnNumber"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "wallTime"
+                    }
+                ],
+                "optional": false,
+                "name": "io.debezium.connector.mongo.Source",
+                "field": "source"
+            },
+            {
+                "type": "string",
+                "optional": true,
+                "field": "op"
+            },
+            {
+                "type": "int64",
+                "optional": true,
+                "field": "ts_ms"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "id"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "total_order"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "data_collection_order"
+                    }
+                ],
+                "optional": true,
+                "name": "event.block",
+                "version": 1,
+                "field": "transaction"
+            }
+        ],
+        "optional": false,
+        "name": "dbserver1.db_shop.offices.Envelope"
+    },
+    "payload": {
+        "before": null,
+        "after": "{\"_id\": {\"$oid\": \"663cd26f96922ac9a17c49d9\"},\"office_id\": 403,\"city\": \"East Glenn\",\"phone\": \"348.457.2633\",\"address_line_1\": \"118 Christopher Brook\",\"address_line_2\": \"Suite 141\",\"state\": \"RI\",\"country\": \"Vanuatu\",\"zip_code\": \"14430\",\"territory\": \"material\"}",
+        "updateDescription": null,
+        "source": {
+            "version": "2.7.0.Alpha1",
+            "connector": "mongodb",
+            "name": "dbserver1",
+            "ts_ms": 0,
+            "snapshot": "true",
+            "db": "db_shop",
+            "sequence": null,
+            "ts_us": 0,
+            "ts_ns": 0,
+            "collection": "offices",
+            "ord": -1,
+            "lsid": null,
+            "txnNumber": null,
+            "wallTime": null
+        },
+        "op": "r",
+        "ts_ms": 1715262339244,
+        "transaction": null
+    }
+}
+Key: b'{
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "string",
+                "optional": false,
+                "field": "id"
+            }
+        ],
+        "optional": false,
+        "name": "dbserver1.db_shop.offices.Key"
+    },
+    "payload": {
+        "id": "{\\"$oid\\": \\"663cd26f96922ac9a17c49da\\"}"
+    }
+}', Value: {
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "string",
+                "optional": true,
+                "name": "io.debezium.data.Json",
+                "version": 1,
+                "field": "before"
+            },
+            {
+                "type": "string",
+                "optional": true,
+                "name": "io.debezium.data.Json",
+                "version": 1,
+                "field": "after"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "optional": false
+                        },
+                        "optional": true,
+                        "field": "removedFields"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "name": "io.debezium.data.Json",
+                        "version": 1,
+                        "field": "updatedFields"
+                    },
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "struct",
+                            "fields": [
+                                {
+                                    "type": "string",
+                                    "optional": false,
+                                    "field": "field"
+                                },
+                                {
+                                    "type": "int32",
+                                    "optional": false,
+                                    "field": "size"
+                                }
+                            ],
+                            "optional": false,
+                            "name": "io.debezium.connector.mongodb.changestream.truncatedarray",
+                            "version": 1
+                        },
+                        "optional": true,
+                        "field": "truncatedArrays"
+                    }
+                ],
+                "optional": true,
+                "name": "io.debezium.connector.mongodb.changestream.updatedescription",
+                "version": 1,
+                "field": "updateDescription"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "version"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "connector"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "name"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_ms"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "name": "io.debezium.data.Enum",
+                        "version": 1,
+                        "parameters": {
+                            "allowed": "true,last,false,incremental"
+                        },
+                        "default": "false",
+                        "field": "snapshot"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "db"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "sequence"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_us"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_ns"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "collection"
+                    },
+                    {
+                        "type": "int32",
+                        "optional": false,
+                        "field": "ord"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "lsid"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "txnNumber"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "wallTime"
+                    }
+                ],
+                "optional": false,
+                "name": "io.debezium.connector.mongo.Source",
+                "field": "source"
+            },
+            {
+                "type": "string",
+                "optional": true,
+                "field": "op"
+            },
+            {
+                "type": "int64",
+                "optional": true,
+                "field": "ts_ms"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "id"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "total_order"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "data_collection_order"
+                    }
+                ],
+                "optional": true,
+                "name": "event.block",
+                "version": 1,
+                "field": "transaction"
+            }
+        ],
+        "optional": false,
+        "name": "dbserver1.db_shop.offices.Envelope"
+    },
+    "payload": {
+        "before": null,
+        "after": "{\"_id\": {\"$oid\": \"663cd26f96922ac9a17c49da\"},\"office_id\": 299,\"city\": \"Michelleshire\",\"phone\": \"+1-341-840-6642x10226\",\"address_line_1\": \"9126 Carter Burg\",\"address_line_2\": \"Suite 320\",\"state\": \"CO\",\"country\": \"Monaco\",\"zip_code\": \"86390\",\"territory\": \"learn\"}",
+        "updateDescription": null,
+        "source": {
+            "version": "2.7.0.Alpha1",
+            "connector": "mongodb",
+            "name": "dbserver1",
+            "ts_ms": 0,
+            "snapshot": "true",
+            "db": "db_shop",
+            "sequence": null,
+            "ts_us": 0,
+            "ts_ns": 0,
+            "collection": "offices",
+            "ord": -1,
+            "lsid": null,
+            "txnNumber": null,
+            "wallTime": null
+        },
+        "op": "r",
+        "ts_ms": 1715262339244,
+        "transaction": null
+    }
+}
+Key: b'{
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "string",
+                "optional": false,
+                "field": "id"
+            }
+        ],
+        "optional": false,
+        "name": "dbserver1.db_shop.offices.Key"
+    },
+    "payload": {
+        "id": "{\\"$oid\\": \\"663cd26f96922ac9a17c49db\\"}"
+    }
+}', Value: {
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "string",
+                "optional": true,
+                "name": "io.debezium.data.Json",
+                "version": 1,
+                "field": "before"
+            },
+            {
+                "type": "string",
+                "optional": true,
+                "name": "io.debezium.data.Json",
+                "version": 1,
+                "field": "after"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "optional": false
+                        },
+                        "optional": true,
+                        "field": "removedFields"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "name": "io.debezium.data.Json",
+                        "version": 1,
+                        "field": "updatedFields"
+                    },
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "struct",
+                            "fields": [
+                                {
+                                    "type": "string",
+                                    "optional": false,
+                                    "field": "field"
+                                },
+                                {
+                                    "type": "int32",
+                                    "optional": false,
+                                    "field": "size"
+                                }
+                            ],
+                            "optional": false,
+                            "name": "io.debezium.connector.mongodb.changestream.truncatedarray",
+                            "version": 1
+                        },
+                        "optional": true,
+                        "field": "truncatedArrays"
+                    }
+                ],
+                "optional": true,
+                "name": "io.debezium.connector.mongodb.changestream.updatedescription",
+                "version": 1,
+                "field": "updateDescription"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "version"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "connector"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "name"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_ms"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "name": "io.debezium.data.Enum",
+                        "version": 1,
+                        "parameters": {
+                            "allowed": "true,last,false,incremental"
+                        },
+                        "default": "false",
+                        "field": "snapshot"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "db"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "sequence"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_us"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_ns"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "collection"
+                    },
+                    {
+                        "type": "int32",
+                        "optional": false,
+                        "field": "ord"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "lsid"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "txnNumber"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "wallTime"
+                    }
+                ],
+                "optional": false,
+                "name": "io.debezium.connector.mongo.Source",
+                "field": "source"
+            },
+            {
+                "type": "string",
+                "optional": true,
+                "field": "op"
+            },
+            {
+                "type": "int64",
+                "optional": true,
+                "field": "ts_ms"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "id"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "total_order"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "data_collection_order"
+                    }
+                ],
+                "optional": true,
+                "name": "event.block",
+                "version": 1,
+                "field": "transaction"
+            }
+        ],
+        "optional": false,
+        "name": "dbserver1.db_shop.offices.Envelope"
+    },
+    "payload": {
+        "before": null,
+        "after": "{\"_id\": {\"$oid\": \"663cd26f96922ac9a17c49db\"},\"office_id\": 374,\"city\": \"West Deborah\",\"phone\": \"397-275-7639x526\",\"address_line_1\": \"4637 Meghan Avenue\",\"address_line_2\": \"Apt. 011\",\"state\": \"FM\",\"country\": \"Bouvet Island (Bouvetoya)\",\"zip_code\": \"30712\",\"territory\": \"she\"}",
+        "updateDescription": null,
+        "source": {
+            "version": "2.7.0.Alpha1",
+            "connector": "mongodb",
+            "name": "dbserver1",
+            "ts_ms": 0,
+            "snapshot": "true",
+            "db": "db_shop",
+            "sequence": null,
+            "ts_us": 0,
+            "ts_ns": 0,
+            "collection": "offices",
+            "ord": -1,
+            "lsid": null,
+            "txnNumber": null,
+            "wallTime": null
+        },
+        "op": "r",
+        "ts_ms": 1715262339244,
+        "transaction": null
+    }
+}
+Key: b'{
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "string",
+                "optional": false,
+                "field": "id"
+            }
+        ],
+        "optional": false,
+        "name": "dbserver1.db_shop.offices.Key"
+    },
+    "payload": {
+        "id": "{\\"$oid\\": \\"663cd26f96922ac9a17c49dc\\"}"
+    }
+}', Value: {
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "string",
+                "optional": true,
+                "name": "io.debezium.data.Json",
+                "version": 1,
+                "field": "before"
+            },
+            {
+                "type": "string",
+                "optional": true,
+                "name": "io.debezium.data.Json",
+                "version": 1,
+                "field": "after"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "optional": false
+                        },
+                        "optional": true,
+                        "field": "removedFields"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "name": "io.debezium.data.Json",
+                        "version": 1,
+                        "field": "updatedFields"
+                    },
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "struct",
+                            "fields": [
+                                {
+                                    "type": "string",
+                                    "optional": false,
+                                    "field": "field"
+                                },
+                                {
+                                    "type": "int32",
+                                    "optional": false,
+                                    "field": "size"
+                                }
+                            ],
+                            "optional": false,
+                            "name": "io.debezium.connector.mongodb.changestream.truncatedarray",
+                            "version": 1
+                        },
+                        "optional": true,
+                        "field": "truncatedArrays"
+                    }
+                ],
+                "optional": true,
+                "name": "io.debezium.connector.mongodb.changestream.updatedescription",
+                "version": 1,
+                "field": "updateDescription"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "version"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "connector"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "name"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_ms"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "name": "io.debezium.data.Enum",
+                        "version": 1,
+                        "parameters": {
+                            "allowed": "true,last,false,incremental"
+                        },
+                        "default": "false",
+                        "field": "snapshot"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "db"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "sequence"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_us"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_ns"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "collection"
+                    },
+                    {
+                        "type": "int32",
+                        "optional": false,
+                        "field": "ord"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "lsid"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "txnNumber"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "wallTime"
+                    }
+                ],
+                "optional": false,
+                "name": "io.debezium.connector.mongo.Source",
+                "field": "source"
+            },
+            {
+                "type": "string",
+                "optional": true,
+                "field": "op"
+            },
+            {
+                "type": "int64",
+                "optional": true,
+                "field": "ts_ms"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "id"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "total_order"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "data_collection_order"
+                    }
+                ],
+                "optional": true,
+                "name": "event.block",
+                "version": 1,
+                "field": "transaction"
+            }
+        ],
+        "optional": false,
+        "name": "dbserver1.db_shop.offices.Envelope"
+    },
+    "payload": {
+        "before": null,
+        "after": "{\"_id\": {\"$oid\": \"663cd26f96922ac9a17c49dc\"},\"office_id\": 261,\"city\": \"Jacquelineville\",\"phone\": \"+1-312-375-5914x72591\",\"address_line_1\": \"994 Arnold Crossroad Apt. 896\",\"address_line_2\": \"Suite 369\",\"state\": \"NJ\",\"country\": \"Uzbekistan\",\"zip_code\": \"62286\",\"territory\": \"citizen\"}",
+        "updateDescription": null,
+        "source": {
+            "version": "2.7.0.Alpha1",
+            "connector": "mongodb",
+            "name": "dbserver1",
+            "ts_ms": 0,
+            "snapshot": "true",
+            "db": "db_shop",
+            "sequence": null,
+            "ts_us": 0,
+            "ts_ns": 0,
+            "collection": "offices",
+            "ord": -1,
+            "lsid": null,
+            "txnNumber": null,
+            "wallTime": null
+        },
+        "op": "r",
+        "ts_ms": 1715262339245,
+        "transaction": null
+    }
+}
+Key: b'{
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "string",
+                "optional": false,
+                "field": "id"
+            }
+        ],
+        "optional": false,
+        "name": "dbserver1.db_shop.offices.Key"
+    },
+    "payload": {
+        "id": "{\\"$oid\\": \\"663cd26f96922ac9a17c49dd\\"}"
+    }
+}', Value: {
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "string",
+                "optional": true,
+                "name": "io.debezium.data.Json",
+                "version": 1,
+                "field": "before"
+            },
+            {
+                "type": "string",
+                "optional": true,
+                "name": "io.debezium.data.Json",
+                "version": 1,
+                "field": "after"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "optional": false
+                        },
+                        "optional": true,
+                        "field": "removedFields"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "name": "io.debezium.data.Json",
+                        "version": 1,
+                        "field": "updatedFields"
+                    },
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "struct",
+                            "fields": [
+                                {
+                                    "type": "string",
+                                    "optional": false,
+                                    "field": "field"
+                                },
+                                {
+                                    "type": "int32",
+                                    "optional": false,
+                                    "field": "size"
+                                }
+                            ],
+                            "optional": false,
+                            "name": "io.debezium.connector.mongodb.changestream.truncatedarray",
+                            "version": 1
+                        },
+                        "optional": true,
+                        "field": "truncatedArrays"
+                    }
+                ],
+                "optional": true,
+                "name": "io.debezium.connector.mongodb.changestream.updatedescription",
+                "version": 1,
+                "field": "updateDescription"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "version"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "connector"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "name"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_ms"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "name": "io.debezium.data.Enum",
+                        "version": 1,
+                        "parameters": {
+                            "allowed": "true,last,false,incremental"
+                        },
+                        "default": "false",
+                        "field": "snapshot"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "db"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "sequence"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_us"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_ns"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "collection"
+                    },
+                    {
+                        "type": "int32",
+                        "optional": false,
+                        "field": "ord"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "lsid"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "txnNumber"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "wallTime"
+                    }
+                ],
+                "optional": false,
+                "name": "io.debezium.connector.mongo.Source",
+                "field": "source"
+            },
+            {
+                "type": "string",
+                "optional": true,
+                "field": "op"
+            },
+            {
+                "type": "int64",
+                "optional": true,
+                "field": "ts_ms"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "id"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "total_order"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "data_collection_order"
+                    }
+                ],
+                "optional": true,
+                "name": "event.block",
+                "version": 1,
+                "field": "transaction"
+            }
+        ],
+        "optional": false,
+        "name": "dbserver1.db_shop.offices.Envelope"
+    },
+    "payload": {
+        "before": null,
+        "after": "{\"_id\": {\"$oid\": \"663cd26f96922ac9a17c49dd\"},\"office_id\": 276,\"city\": \"Griffithhaven\",\"phone\": \"9197467509\",\"address_line_1\": \"757 Ortega Ports\",\"address_line_2\": \"Suite 437\",\"state\": \"DE\",\"country\": \"Cyprus\",\"zip_code\": \"67871\",\"territory\": \"raise\"}",
+        "updateDescription": null,
+        "source": {
+            "version": "2.7.0.Alpha1",
+            "connector": "mongodb",
+            "name": "dbserver1",
+            "ts_ms": 0,
+            "snapshot": "true",
+            "db": "db_shop",
+            "sequence": null,
+            "ts_us": 0,
+            "ts_ns": 0,
+            "collection": "offices",
+            "ord": -1,
+            "lsid": null,
+            "txnNumber": null,
+            "wallTime": null
+        },
+        "op": "r",
+        "ts_ms": 1715262339245,
+        "transaction": null
+    }
+}
+Key: b'{
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "string",
+                "optional": false,
+                "field": "id"
+            }
+        ],
+        "optional": false,
+        "name": "dbserver1.db_shop.offices.Key"
+    },
+    "payload": {
+        "id": "{\\"$oid\\": \\"663cd4d870a09a784f2202d8\\"}"
+    }
+}', Value: {
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "string",
+                "optional": true,
+                "name": "io.debezium.data.Json",
+                "version": 1,
+                "field": "before"
+            },
+            {
+                "type": "string",
+                "optional": true,
+                "name": "io.debezium.data.Json",
+                "version": 1,
+                "field": "after"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "optional": false
+                        },
+                        "optional": true,
+                        "field": "removedFields"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "name": "io.debezium.data.Json",
+                        "version": 1,
+                        "field": "updatedFields"
+                    },
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "struct",
+                            "fields": [
+                                {
+                                    "type": "string",
+                                    "optional": false,
+                                    "field": "field"
+                                },
+                                {
+                                    "type": "int32",
+                                    "optional": false,
+                                    "field": "size"
+                                }
+                            ],
+                            "optional": false,
+                            "name": "io.debezium.connector.mongodb.changestream.truncatedarray",
+                            "version": 1
+                        },
+                        "optional": true,
+                        "field": "truncatedArrays"
+                    }
+                ],
+                "optional": true,
+                "name": "io.debezium.connector.mongodb.changestream.updatedescription",
+                "version": 1,
+                "field": "updateDescription"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "version"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "connector"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "name"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_ms"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "name": "io.debezium.data.Enum",
+                        "version": 1,
+                        "parameters": {
+                            "allowed": "true,last,false,incremental"
+                        },
+                        "default": "false",
+                        "field": "snapshot"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "db"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "sequence"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_us"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_ns"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "collection"
+                    },
+                    {
+                        "type": "int32",
+                        "optional": false,
+                        "field": "ord"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "lsid"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "txnNumber"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "wallTime"
+                    }
+                ],
+                "optional": false,
+                "name": "io.debezium.connector.mongo.Source",
+                "field": "source"
+            },
+            {
+                "type": "string",
+                "optional": true,
+                "field": "op"
+            },
+            {
+                "type": "int64",
+                "optional": true,
+                "field": "ts_ms"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "id"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "total_order"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "data_collection_order"
+                    }
+                ],
+                "optional": true,
+                "name": "event.block",
+                "version": 1,
+                "field": "transaction"
+            }
+        ],
+        "optional": false,
+        "name": "dbserver1.db_shop.offices.Envelope"
+    },
+    "payload": {
+        "before": null,
+        "after": "{\"_id\": {\"$oid\": \"663cd4d870a09a784f2202d8\"},\"office_id\": 100,\"city\": \"South Jakarta\",\"phone\": \"087886250948\",\"address_line_1\": \"Kayu Tinggi\",\"address_line_2\": \"Cakung Timur\",\"state\": \"DKI Jakarta\",\"country\": \"Indonesia\",\"zip_code\": \"13910\",\"territory\": \"Jakarta\"}",
+        "updateDescription": null,
+        "source": {
+            "version": "2.7.0.Alpha1",
+            "connector": "mongodb",
+            "name": "dbserver1",
+            "ts_ms": 1715262680000,
+            "snapshot": "false",
+            "db": "db_shop",
+            "sequence": null,
+            "ts_us": 1715262680000000,
+            "ts_ns": 1715262680000000000,
+            "collection": "offices",
+            "ord": 1,
+            "lsid": null,
+            "txnNumber": null,
+            "wallTime": 1715262680079
+        },
+        "op": "c",
+        "ts_ms": 1715262680157,
+        "transaction": null
+    }
+}
+Key: b'{
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "string",
+                "optional": false,
+                "field": "id"
+            }
+        ],
+        "optional": false,
+        "name": "dbserver1.db_shop.offices.Key"
+    },
+    "payload": {
+        "id": "{\\"$oid\\": \\"663cd6fee659a946832202d8\\"}"
+    }
+}', Value: {
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "string",
+                "optional": true,
+                "name": "io.debezium.data.Json",
+                "version": 1,
+                "field": "before"
+            },
+            {
+                "type": "string",
+                "optional": true,
+                "name": "io.debezium.data.Json",
+                "version": 1,
+                "field": "after"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "optional": false
+                        },
+                        "optional": true,
+                        "field": "removedFields"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "name": "io.debezium.data.Json",
+                        "version": 1,
+                        "field": "updatedFields"
+                    },
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "struct",
+                            "fields": [
+                                {
+                                    "type": "string",
+                                    "optional": false,
+                                    "field": "field"
+                                },
+                                {
+                                    "type": "int32",
+                                    "optional": false,
+                                    "field": "size"
+                                }
+                            ],
+                            "optional": false,
+                            "name": "io.debezium.connector.mongodb.changestream.truncatedarray",
+                            "version": 1
+                        },
+                        "optional": true,
+                        "field": "truncatedArrays"
+                    }
+                ],
+                "optional": true,
+                "name": "io.debezium.connector.mongodb.changestream.updatedescription",
+                "version": 1,
+                "field": "updateDescription"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "version"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "connector"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "name"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_ms"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "name": "io.debezium.data.Enum",
+                        "version": 1,
+                        "parameters": {
+                            "allowed": "true,last,false,incremental"
+                        },
+                        "default": "false",
+                        "field": "snapshot"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "db"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "sequence"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_us"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_ns"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "collection"
+                    },
+                    {
+                        "type": "int32",
+                        "optional": false,
+                        "field": "ord"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "lsid"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "txnNumber"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "wallTime"
+                    }
+                ],
+                "optional": false,
+                "name": "io.debezium.connector.mongo.Source",
+                "field": "source"
+            },
+            {
+                "type": "string",
+                "optional": true,
+                "field": "op"
+            },
+            {
+                "type": "int64",
+                "optional": true,
+                "field": "ts_ms"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "id"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "total_order"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "data_collection_order"
+                    }
+                ],
+                "optional": true,
+                "name": "event.block",
+                "version": 1,
+                "field": "transaction"
+            }
+        ],
+        "optional": false,
+        "name": "dbserver1.db_shop.offices.Envelope"
+    },
+    "payload": {
+        "before": null,
+        "after": "{\"_id\": {\"$oid\": \"663cd6fee659a946832202d8\"},\"office_id\": 999,\"city\": \"East Jakarta\",\"phone\": \"087886250948\",\"address_line_1\": \"Cisitu Lama\",\"address_line_2\": \"Cisitu Lama No.2\",\"state\": \"Bandung\",\"country\": \"Indonesia\",\"zip_code\": \"13540\",\"territory\": \"Bandung City\"}",
+        "updateDescription": null,
+        "source": {
+            "version": "2.7.0.Alpha1",
+            "connector": "mongodb",
+            "name": "dbserver1",
+            "ts_ms": 1715263230000,
+            "snapshot": "false",
+            "db": "db_shop",
+            "sequence": null,
+            "ts_us": 1715263230000000,
+            "ts_ns": 1715263230000000000,
+            "collection": "offices",
+            "ord": 1,
+            "lsid": null,
+            "txnNumber": null,
+            "wallTime": 1715263230324
+        },
+        "op": "c",
+        "ts_ms": 1715263230621,
+        "transaction": null
+    }
+}

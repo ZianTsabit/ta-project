@@ -1,0 +1,6 @@
+initial_fields = {
+    "client_id": "INT",
+    "check_id": "VARCHAR(255)",  # UUID is not directly supported by all databases, so using VARCHAR(255)
+    "payment_date": "TIMESTAMP",
+    "amount": "DOUBLE PRECISION"
+}
